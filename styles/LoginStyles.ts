@@ -65,9 +65,18 @@ headerText: {
     color: "red",
   },
 
-  link: {
-    marginTop: 15,
-    color: "#555",
-    fontSize: 15,
-  },
+link: {
+  marginTop: 15,
+  color: "#555",
+  fontSize: 15,
+},
+
+logo: {
+  width: 140,
+  height: 80,
+  resizeMode: "contain",
+  alignSelf: "flex-start",
+  marginLeft: 20,
+  marginTop: 120,
+},
 });

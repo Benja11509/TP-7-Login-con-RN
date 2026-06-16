@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+   Image,
 } from "react-native";
 
 import { styles } from "../../styles/LoginStyles";
@@ -18,6 +19,7 @@ export default function HomeScreen() {
   const USER = "simon@galaxies.dev";
   const PASS = "password123";
 
+  
   const handleLogin = () => {
     if (email === USER && password === PASS) {
       setMessage("¡Ingreso exitoso! Bienvenido");
@@ -34,9 +36,13 @@ export default function HomeScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
   <Text style={styles.headerText}>
-    Login App
-  </Text>
+  Login App (Liberman, Liberman)
+</Text>
 </View>
+<Image
+         source={require("../../images/cocacola.png")}
+        style={styles.logo}
+        />
 
       <View style={styles.formContainer}>
         <TextInput
@@ -62,7 +68,7 @@ export default function HomeScreen() {
             INGRESAR
           </Text>
         </TouchableOpacity>
-
+         
         {message !== "" && (
           <Text
             style={[
